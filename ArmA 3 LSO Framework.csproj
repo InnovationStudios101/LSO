@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7D32CF59-B9C2-4D62-B2EB-7F7723B1CB3F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ClassLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>ArmA_3_LSO_Framework</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="3dText.txt" />
+    <Content Include="Overview.html" />
+    <Content Include="params.hpp" />
+    <Content Include="pictures\splash\pt101.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="briefing.sqf" />
+    <None Include="core\functions\BIN_taskDefend.sqf" />
+    <None Include="core\functions\BIN_taskDefendLoose.sqf" />
+    <None Include="core\functions\BIN_taskPatrol.sqf" />
+    <None Include="core\functions\BIS_spawnINS.sqf" />
+    <None Include="core\functions\lck_sys\checkslot.sqf" />
+    <None Include="core\functions\lck_sys\mod_check.sqf" />
+    <None Include="core\functions\rnk_sys\crateFiller.sqf" />
+    <None Include="core\functions\rnk_sys\crateFillerJIP.sqf" />
+    <None Include="core\functions\rnk_sys\rankUp.sqf" />
+    <None Include="core\functions\rnk_sys\rank_sys.sqf" />
+    <None Include="core\functions\tsk_sys\pri\mission01.sqf" />
+    <None Include="core\functions\tsk_sys\pri\mission02.sqf" />
+    <None Include="core\functions\tsk_sys\pri\mission03.sqf" />
+    <None Include="core\functions\tsk_sys\pri\mission04.sqf" />
+    <None Include="core\functions\tsk_sys\pri\mission05.sqf" />
+    <None Include="core\functions\tsk_sys\random_pri.sqf" />
+    <None Include="core\functions\tsk_sys\random_sec.sqf" />
+    <None Include="core\functions\tsk_sys\sec\mission01.sqf" />
+    <None Include="core\functions\tsk_sys\sec\mission02.sqf" />
+    <None Include="core\functions\tsk_sys\sec\mission03.sqf" />
+    <None Include="core\functions\tsk_sys\sec\mission04.sqf" />
+    <None Include="core\functions\tsk_sys\sec\mission05.sqf" />
+    <None Include="core\functions\txt_sys\3dtext.sqf" />
+    <None Include="core\functions\veh_sys\mhqRespawn.sqf" />
+    <None Include="core\functions\veh_sys\resupply.sqf" />
+    <None Include="core\functions\veh_sys\selectVehicle.sqf" />
+    <None Include="core\functions\veh_sys\vehicle.sqf" />
+    <None Include="core\functions\veh_sys\x_reload.sqf" />
+    <None Include="core\functions\wpn_sys\ammo.sqf" />
+    <None Include="core\functions\wpn_sys\equipment.sqf" />
+    <None Include="core\functions\wpn_sys\heavy_weapons.sqf" />
+    <None Include="core\functions\wpn_sys\rifles.sqf" />
+    <None Include="core\scripts\gp_campfire\action_manager.sqf" />
+    <None Include="core\scripts\gp_campfire\light_fire.sqf" />
+    <None Include="core\scripts\gp_campfire\putout_fire.sqf" />
+    <None Include="core\scripts\gp_sleepingbag\action_manager.sqf" />
+    <None Include="core\scripts\gp_sleepingbag\deploy_sleepingbag.sqf" />
+    <None Include="core\scripts\gp_sleepingbag\pack_sleepingbag.sqf" />
+    <None Include="core\scripts\gp_tiny_tent\action_manager.sqf" />
+    <None Include="core\scripts\gp_tiny_tent\deploy_tent.sqf" />
+    <None Include="core\scripts\gp_tiny_tent\pack_tent.sqf" />
+    <None Include="core\scripts\selectRole.sqf" />
+    <None Include="core\scripts\setViewDistance.sqf" />
+    <None Include="core\scripts\sitdown.sqf" />
+    <None Include="core\scripts\standup.sqf" />
+    <None Include="core\scripts\triggers.sqf" />
+    <None Include="core\selectRoleAct.sqf" />
+    <None Include="core\selectVehicleAct.sqf" />
+    <None Include="description.ext" />
+    <None Include="initPlayerLocal.sqf" />
+    <None Include="initServer.sqf" />
+    <None Include="Large Scale Operations Guide.docx" />
+    <None Include="lso_v0%252e1.Takistan.7z" />
+    <None Include="multitask_v0.1.4.7z" />
+    <None Include="music\track01.ogg" />
+    <None Include="music\track02.ogg" />
+    <None Include="pictures\splash\pt101.paa" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
